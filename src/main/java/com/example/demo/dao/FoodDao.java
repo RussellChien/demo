@@ -3,6 +3,7 @@ package com.example.demo.dao;
 import com.example.demo.model.Food;
 
 import java.util.UUID;
+import java.util.Optional;
 import java.util.List;
 
 public interface FoodDao {
@@ -15,4 +16,10 @@ public interface FoodDao {
     }  
 
     List<Food> selectAllFood();
+
+    Optional<Food> selectFood(UUID id);
+
+    int deleteFood(UUID id);
+
+    int updateFood(UUID id, Food food);
 }

@@ -4,9 +4,15 @@ import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.validation.constraints.NotBlank;
+
 public class Food {
-    private final UUID id; 
+
+    private final UUID id;
+
+    @NotBlank
     private final String name;
+    
     private final double price;
 
     public Food (@JsonProperty("id") UUID id, 
