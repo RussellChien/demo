@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.UUID;
 import java.util.Optional;
-import java.util.Map;
 
 @Repository("fakeDao")
 public class FakeFoodDataAccessService implements FoodDao {
@@ -52,4 +51,4 @@ public class FakeFoodDataAccessService implements FoodDao {
             .orElse(0);
     }
 
-}
+}   
